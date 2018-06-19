@@ -1,0 +1,79 @@
+2016-12-20 23:20:20 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2016-12-20 23:20:27 ERROR  : Failed to re-establish the connection to the server postgres on postgres@localhost:5432
+2016-12-20 23:39:13 ERROR  : ERROR:  relation "postgres.user_detail" does not exist
+LINE 1: SELECT * FROM POSTGRES.USER_DETAIL;
+                      ^
+2016-12-21 22:49:17 ERROR  : ERROR:  relation "public.user_detail" does not exist
+LINE 1: SELECT count(*) AS rows FROM ONLY public.user_detail
+                                          ^
+2017-01-08 10:09:58 ERROR  : ERROR:  relation "userdetails" does not exist
+LINE 1: select * from userdetails;
+                      ^
+2017-01-08 10:10:11 ERROR  : ERROR:  relation "user_details" does not exist
+LINE 1: select * from user_details;
+                      ^
+2017-01-08 10:34:20 ERROR  : connection not open
+2017-01-08 10:34:28 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-01-08 10:34:35 ERROR  : Failed to re-establish the connection to the server postgres on postgres@localhost:5432
+2017-01-08 10:45:16 ERROR  : server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+2017-02-18 21:05:32 ERROR  : ERROR:  cannot drop table user_detail because other objects depend on it
+DETAIL:  constraint fkqmw6a7m8ivp5vnq2l2b7dpwd7 on table vehicle depends on table user_detail
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.
+2017-05-26 00:12:38 ERROR  : ERROR:  relation "customer" does not exist
+LINE 1: select * from customer;
+                      ^
+2017-05-26 00:13:56 ERROR  : ERROR:  relation "public.customer" does not exist
+LINE 1:  insert into public."customer" values (1, "Test");
+                     ^
+2017-05-26 00:14:15 ERROR  : ERROR:  syntax error at or near "" values (1, ""
+LINE 6:   insert into customer" values (1, "Test");
+                              ^
+2017-05-26 00:14:26 ERROR  : ERROR:  relation "customer" does not exist
+LINE 6:   insert into customer values (1, "Test");
+                      ^
+2017-05-26 00:15:25 ERROR  : ERROR:  relation "public.customer" does not exist
+LINE 6:   insert into public.customer values (1, "Test");
+                      ^
+2017-05-26 00:15:58 ERROR  : ERROR:  syntax error at or near "selectn"
+LINE 8:   selectn * from user_detail;
+          ^
+2017-05-26 00:16:05 ERROR  : ERROR:  relation "public.customer" does not exist
+LINE 6:   insert into public.customer values (1, "Test");
+                      ^
+2017-05-26 00:17:49 ERROR  : ERROR:  column "1" does not exist
+LINE 4: insert into public."CUSTOMER" values("1","Test");
+                                             ^
+2017-05-26 00:18:00 ERROR  : ERROR:  column "Test" does not exist
+LINE 4: insert into public."CUSTOMER" values(1,"Test");
+                                               ^
+2017-05-26 00:18:02 ERROR  : ERROR:  column "Test" does not exist
+LINE 4: insert into public."CUSTOMER" values(1,"Test");
+                                               ^
+2017-05-26 00:18:12 ERROR  : ERROR:  column "Test" does not exist
+LINE 4: insert into public."CUSTOMER" values(1,"Test");
+                                               ^
+2017-05-26 00:18:32 ERROR  : ERROR:  column "T" does not exist
+LINE 1: insert into public."CUSTOMER" values(1,"T");
+                                               ^
+2017-05-26 00:27:05 ERROR  : ERROR:  syntax error at or near "DESC"
+LINE 9:   DESC USER_ADDRESS;
+          ^
+2017-05-26 00:27:11 ERROR  : ERROR:  syntax error at or near "DESC"
+LINE 1:  DESC USER_ADDRESS;
+         ^
+2017-05-26 00:27:12 ERROR  : ERROR:  syntax error at or near "DESC"
+LINE 9:   DESC USER_ADDRESS;
+          ^
+2017-06-01 23:36:37 ERROR  : ERROR:  relation "employee" already exists
+2017-06-03 00:44:57 ERROR  : ERROR:  column "Mitul" does not exist
+LINE 1: insert into customer values(2,"Mitul","Mulad");
+                                      ^
+2017-06-03 15:49:34 ERROR  : ERROR:  syntax error at or near "Mitul"
+LINE 4:  (this_.CUSTADDR=''Mitul' and this_.CUST_NAME='Mulad')
+                           ^
